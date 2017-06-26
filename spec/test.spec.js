@@ -1,7 +1,7 @@
-var test = require('../main');
-describe('a test', () => {
-  it('should return true', () => {
+var test = require('../src/main');
 
-    expect(test()).toBe(true);
-  });
-});
+describe('a test', function () {
+    it('should return true', function () {
+        expect(test()).toBe(true);
+    });
+})

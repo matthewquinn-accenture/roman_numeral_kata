@@ -4,7 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+<<<<<<< HEAD
     "babel": "babel --presets es2015 js/*.js -o build/main.bundle.js",
+=======
+    "babel": "babel --presets es2015 src/*.js -o build/main.bundle.js",
+>>>>>>> ceb247801f40a9ba0c3dee5ad60b9c887ba0ed85
     "test": "jasmine ./spec/*.js"
 },
   "dependencies": {
