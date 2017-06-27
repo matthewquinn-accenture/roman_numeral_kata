@@ -1,7 +1,8 @@
-var test = require('../src/main');
+import jasmine from 'jasmine';
+import { hello_World } from '../src/main.js';
 
-describe('a test', function () {
-    it('should return true', function () {
-        expect(test()).toBe(true);
+describe('a test', () => {
+    it('should return true', () => {
+        expect(hello_World()).toBe(true);
     });
-})
+});

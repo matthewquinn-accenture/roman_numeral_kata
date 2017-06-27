@@ -1,5 +1,3 @@
-function hello_World () {
+export const hello_World = () => {
     return true;
 }
-
-module.exports = hello_World;
