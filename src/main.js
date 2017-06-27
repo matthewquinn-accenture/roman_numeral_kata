@@ -1,20 +1,25 @@
-export const roman_numeral = (num) => {
+export const roman_numeral = (inputNum) => {
 
-    let converted = '';
+    let romanNum = '';
+    let conversionTable = {
+        "X" : 10,
+        "IX": 9,
+        "V" : 5,
+        "IV": 4,
+        "I" : 1
+    };
 
-    if (num === 4) {
-        converted = 'IV'
-        return converted;
-    } else if (num === 5) {
-        converted = 'V'
-        return converted;
-    } else if (num === 6) {
-        converted = "VI";
-        return converted;
+    if (inputNum <= 0) {
+        throw new Error('Input number should be greater than 0.');
     }
 
-    for(let i = 0; i < num; i++) {
-        converted += 'I';
+    for(let i in conversionTable) {
+        let conversionValue = conversionTable[i];
+
+        while(inputNum >= conversionValue){
+            romanNum += i;
+            inputNum -= conversionValue;
+        }
     }
-    return converted;
+    return romanNum;
 }
