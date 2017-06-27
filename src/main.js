@@ -1,12 +1,18 @@
 export const roman_numeral = (num) => {
-    // if (num === 1) {
-    //    return "I";
-    // } else if (num === 2) {
-    //     return "II";
-    // } else {
-    //     return "III";
-    // }
+
     let converted = '';
+
+    if (num === 4) {
+        converted = 'IV'
+        return converted;
+    } else if (num === 5) {
+        converted = 'V'
+        return converted;
+    } else if (num === 6) {
+        converted = "VI";
+        return converted;
+    }
+
     for(let i = 0; i < num; i++) {
         converted += 'I';
     }
