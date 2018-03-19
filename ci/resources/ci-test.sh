@@ -1,10 +1,13 @@
 #!/bin/bash -e
 
+echo "install sudo"
+apt-get install sudo
+
 echo "installing yarn items"
-apt-get update && sudo apt-get install yarn
+sudo apt-get update && sudo apt-get install yarn
 
 echo "instaling node"
-apt-get install npm
+sudo apt-get install npm
 
 echo "installing yarn"
 yarn install
