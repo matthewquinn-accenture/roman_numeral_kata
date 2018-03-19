@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
-echo "install sudo"
-apt-get install sudo
+echo "updating and adding sudo"
+apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*
 
 echo "installing yarn items"
 sudo apt-get update && sudo apt-get install yarn
