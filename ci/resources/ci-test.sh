@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
 echo "installing yarn items"
-sudo apt-get update && sudo apt-get install yarn
+apt-get update && sudo apt-get install yarn
 
 echo "instaling node"
-sudo apt-get install npm
+apt-get install npm
 
 echo "installing yarn"
 yarn install
